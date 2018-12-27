@@ -1,0 +1,10 @@
+c:\users\isuru\documents\visual studio 2015\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.csprojResolveAssemblyReference.cache
+c:\users\isuru\documents\visual studio 2015\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.Form1.resources
+c:\users\isuru\documents\visual studio 2015\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.csproj.GenerateResource.Cache
+C:\Users\Isuru\documents\visual studio 2015\Projects\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\Green Star Master.exe
+C:\Users\Isuru\documents\visual studio 2015\Projects\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\Green Star Master.pdb
+C:\Users\Isuru\documents\visual studio 2015\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\GreenStarMaster.Properties.Resources.resources
+C:\Users\Isuru\documents\visual studio 2015\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\Green Star Master.exe
+C:\Users\Isuru\documents\visual studio 2015\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\Green Star Master.pdb
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\GreenStarMaster\WindowsFormsApplication3\obj\Debug\Green Star Master.exe
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\GreenStarMaster\WindowsFormsApplication3\obj\Debug\Green Star Master.pdb
