@@ -1,3 +1,3 @@
-# Green-Star-Master
+# Stage-Master
 
 # A StageData byml editor for Super Mario 3D World

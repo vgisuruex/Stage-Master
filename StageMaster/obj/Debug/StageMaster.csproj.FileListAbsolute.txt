@@ -1,0 +1,2 @@
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\GreenStarMaster\StageMaster\obj\Debug\Stage Master.exe
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\GreenStarMaster\StageMaster\obj\Debug\Stage Master.pdb
