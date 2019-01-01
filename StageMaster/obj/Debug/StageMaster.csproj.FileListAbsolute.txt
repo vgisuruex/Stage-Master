@@ -1,2 +1,27 @@
 C:\Users\Isuru\Documents\Visual Studio 2015\Projects\GreenStarMaster\StageMaster\obj\Debug\Stage Master.exe
 C:\Users\Isuru\Documents\Visual Studio 2015\Projects\GreenStarMaster\StageMaster\obj\Debug\Stage Master.pdb
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\StageMaster\StageMaster\bin\Debug\Stage Master.exe.config
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\StageMaster\StageMaster\bin\Debug\Stage Master.exe
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\StageMaster\StageMaster\bin\Debug\Stage Master.pdb
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\StageMaster\StageMaster\obj\Debug\StageMaster.csprojResolveAssemblyReference.cache
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\StageMaster\StageMaster\obj\Debug\WindowsFormsApplication3.Form1.resources
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\StageMaster\StageMaster\obj\Debug\GreenStarMaster.Form2.resources
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\StageMaster\StageMaster\obj\Debug\WindowsFormsApplication3.Form3.resources
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\StageMaster\StageMaster\obj\Debug\WindowsFormsApplication3.Form4.resources
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\StageMaster\StageMaster\obj\Debug\StageMaster.Form6.resources
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\StageMaster\StageMaster\obj\Debug\StageMaster.Properties.Resources.resources
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\StageMaster\StageMaster\obj\Debug\StageMaster.csproj.GenerateResource.Cache
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\StageMaster\StageMaster\obj\Debug\Stage Master.exe
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\StageMaster\StageMaster\obj\Debug\Stage Master.pdb
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\StageMaster\StageMaster\bin\Debug\Syroot.BinaryData.dll
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\StageMaster\StageMaster\bin\Debug\Syroot.NintenTools.Yaz0.dll
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\StageMaster\StageMaster\bin\Debug\System.Buffers.dll
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\StageMaster\StageMaster\bin\Debug\System.Memory.dll
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\StageMaster\StageMaster\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\StageMaster\StageMaster\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\StageMaster\StageMaster\bin\Debug\Syroot.BinaryData.xml
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\StageMaster\StageMaster\bin\Debug\Syroot.NintenTools.Yaz0.xml
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\StageMaster\StageMaster\bin\Debug\System.Buffers.xml
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\StageMaster\StageMaster\bin\Debug\System.Memory.xml
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\StageMaster\StageMaster\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Isuru\Documents\Visual Studio 2015\Projects\StageMaster\StageMaster\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml

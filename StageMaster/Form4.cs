@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using GreenStarMaster;
+using StageMaster;
 
 namespace WindowsFormsApplication3
 {
@@ -39,16 +40,13 @@ namespace WindowsFormsApplication3
 
         private void Form4_Load(object sender, EventArgs e)
         {
-
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             Form1 form1 = new Form1();
             form1.Show();
             Hide();
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
         }
@@ -85,12 +83,16 @@ namespace WindowsFormsApplication3
 
         private void Form4_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Hide();
-            Form5 form5 = new Form5();
-            form5.Show();
+            Application.Exit();
         }
         private void Form4_FormClosed(object sender, FormClosedEventArgs e)
         {
+        }
+        private void doubleCherryMasterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form6 form6 = new Form6();
+            form6.Show();
+            Hide();
         }
     }
 }

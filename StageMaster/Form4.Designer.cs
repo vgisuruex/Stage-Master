@@ -41,11 +41,15 @@
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.switchToToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.doubleCherryMasterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Location = new System.Drawing.Point(12, 44);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(114, 42);
             this.button1.TabIndex = 0;
@@ -55,7 +59,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(318, 12);
+            this.button2.Location = new System.Drawing.Point(318, 44);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(114, 42);
             this.button2.TabIndex = 1;
@@ -65,7 +69,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(164, 12);
+            this.button3.Location = new System.Drawing.Point(164, 44);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(114, 42);
             this.button3.TabIndex = 2;
@@ -75,7 +79,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(12, 88);
+            this.button4.Location = new System.Drawing.Point(12, 120);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(114, 42);
             this.button4.TabIndex = 3;
@@ -85,7 +89,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(164, 88);
+            this.button5.Location = new System.Drawing.Point(164, 120);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(114, 42);
             this.button5.TabIndex = 4;
@@ -95,7 +99,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(318, 88);
+            this.button6.Location = new System.Drawing.Point(318, 120);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(114, 42);
             this.button6.TabIndex = 5;
@@ -105,7 +109,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(12, 172);
+            this.button7.Location = new System.Drawing.Point(12, 204);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(114, 42);
             this.button7.TabIndex = 1;
@@ -115,7 +119,7 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(164, 172);
+            this.button8.Location = new System.Drawing.Point(164, 204);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(114, 42);
             this.button8.TabIndex = 7;
@@ -125,7 +129,7 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(318, 172);
+            this.button9.Location = new System.Drawing.Point(318, 204);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(114, 42);
             this.button9.TabIndex = 8;
@@ -135,7 +139,7 @@
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(12, 256);
+            this.button10.Location = new System.Drawing.Point(12, 288);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(114, 42);
             this.button10.TabIndex = 9;
@@ -145,7 +149,7 @@
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(164, 256);
+            this.button11.Location = new System.Drawing.Point(164, 288);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(114, 42);
             this.button11.TabIndex = 10;
@@ -155,7 +159,7 @@
             // 
             // button12
             // 
-            this.button12.Location = new System.Drawing.Point(318, 256);
+            this.button12.Location = new System.Drawing.Point(318, 288);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(114, 42);
             this.button12.TabIndex = 11;
@@ -163,11 +167,36 @@
             this.button12.UseVisualStyleBackColor = true;
             this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.switchToToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(444, 24);
+            this.menuStrip1.TabIndex = 12;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // switchToToolStripMenuItem
+            // 
+            this.switchToToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.doubleCherryMasterToolStripMenuItem});
+            this.switchToToolStripMenuItem.Name = "switchToToolStripMenuItem";
+            this.switchToToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
+            this.switchToToolStripMenuItem.Text = "Switch to...";
+            // 
+            // doubleCherryMasterToolStripMenuItem
+            // 
+            this.doubleCherryMasterToolStripMenuItem.Name = "doubleCherryMasterToolStripMenuItem";
+            this.doubleCherryMasterToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.doubleCherryMasterToolStripMenuItem.Text = "Double Cherry Master";
+            this.doubleCherryMasterToolStripMenuItem.Click += new System.EventHandler(this.doubleCherryMasterToolStripMenuItem_Click);
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(444, 314);
+            this.ClientSize = new System.Drawing.Size(444, 350);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
@@ -180,13 +209,18 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form4";
             this.Text = "GreenStarMaster";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form4_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form4_FormClosed);
             this.Load += new System.EventHandler(this.Form4_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -204,5 +238,8 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem switchToToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem doubleCherryMasterToolStripMenuItem;
     }
 }

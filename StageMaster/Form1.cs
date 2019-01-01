@@ -7,6 +7,9 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using GreenStarMaster;
+using Syroot.NintenTools.Yaz0;
+using System.Linq;
+using System.Diagnostics;
 
 namespace WindowsFormsApplication3
 {
@@ -18,9 +21,13 @@ namespace WindowsFormsApplication3
         }
 
         OpenFileDialog ofd = new OpenFileDialog();
+        OpenFileDialog SZS = new OpenFileDialog();
+        SaveFileDialog SZSSave = new SaveFileDialog();
         bool FileOpened;
         uint UserResult;
         decimal UserChoice;
+        byte[] Bytes;
+        Process myProcess = new Process();
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -49,8 +56,7 @@ namespace WindowsFormsApplication3
                     bw.BaseStream.Position = 0xFD3;
                     bw.Write(0x06000000 + UserResult);
                     bw.Close();
-
-                    MessageBox.Show("The Green Star Count Of Level 1 (EnterCatMarioStage) Has Been Changed!", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("The Green Star Count Of Level 1 (EnterCatMarioStage) Has Been Changed to " + UserResult + "!", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     UserResult = 0;
                 }
             }
@@ -186,10 +192,7 @@ namespace WindowsFormsApplication3
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ofd.ShowDialog();
-            FileOpened = true;
         }
-
         private void numericUpDown2_ValueChanged(object sender, EventArgs e)
         {
         }
@@ -249,7 +252,7 @@ namespace WindowsFormsApplication3
                     bw.Write(0x06000000 + UserResult);
                     bw.Close();
 
-                    MessageBox.Show("The Green Star Count Of Level 2 (NokonokoCaveStage) Has Been Changed!", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("The Green Star Count Of Level 2 (NokonokoCaveStage) Has Been Changed to " + UserResult + "!", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     UserResult = 0;
                 }
             }
@@ -278,7 +281,7 @@ namespace WindowsFormsApplication3
                     bw.Write(0x06000000 + UserResult);
                     bw.Close();
 
-                    MessageBox.Show("The Green Star Count Of Level ? (GateKeeperBullLv1Stage) Has Been Changed!", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("The Green Star Count Of Level ? (GateKeeperBullLv1Stage) Has Been Changed to " + UserResult + "!", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     UserResult = 0;
                 }
             }
@@ -302,7 +305,7 @@ namespace WindowsFormsApplication3
                     bw.Write(0x06000000 + UserResult);
                     bw.Close();
 
-                    MessageBox.Show("The Green Star Count Of Level Castle (KoopaChaseLv1Stage) Has Been Changed!", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("The Green Star Count Of Level Castle (KoopaChaseLv1Stage) Has Been Changed to " + UserResult + "!", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     UserResult = 0;
                 }
             }
@@ -326,7 +329,7 @@ namespace WindowsFormsApplication3
                     bw.Write(0x06000000 + UserResult);
                     bw.Close();
 
-                    MessageBox.Show("The Green Star Count Of Level ? (KinopioBrigadeTentenStage) Has Been Changed!", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("The Green Star Count Of Level ? (KinopioBrigadeTentenStage) Has Been Changed to " + UserResult + "!", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     UserResult = 0;
                 }
             }
@@ -350,7 +353,7 @@ namespace WindowsFormsApplication3
                     bw.Write(0x06000000 + UserResult);
                     bw.Close();
 
-                    MessageBox.Show("The Green Star Count Of Level 5 (FlipCircusStage) Has Been Changed!", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("The Green Star Count Of Level 5 (FlipCircusStage) Has Been Changed to " + UserResult + "!", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     UserResult = 0;
                 }
             }
@@ -374,7 +377,7 @@ namespace WindowsFormsApplication3
                     bw.Write(0x06000000 + UserResult);
                     bw.Close();
 
-                    MessageBox.Show("The Green Star Count Of Level 4 (DownRiverStage) Has Been Changed!", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("The Green Star Count Of Level 4 (DownRiverStage) Has Been Changed to " + UserResult + "!", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     UserResult = 0;
                 }
             }
@@ -398,7 +401,7 @@ namespace WindowsFormsApplication3
                     bw.Write(0x06000000 + UserResult);
                     bw.Close();
 
-                    MessageBox.Show("The Green Star Count Of Level 3 (ClimbMountainStage) Has Been Changed!", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("The Green Star Count Of Level 3 (ClimbMountainStage) Has Been Changed to " + UserResult + "!", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     UserResult = 0;
                 }
             }
@@ -452,32 +455,125 @@ namespace WindowsFormsApplication3
         {
             Close();
         }
-
-        private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
-        {
-
-        }
-
-        private void world1ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form3 form3 = new Form3();
-            form3.Show();
-        }
-
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Form4 form4 = new Form4();
-            form4.Show();
         }
-
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-
+            this.Hide();
+            var form4 = new Form4();
+            form4.Closed += (s, args) => this.Close();
+            form4.Show();
         }
-
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
         }
+
+        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void openBymlToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ofd.ShowDialog();
+            FileOpened = true;
+        }
+
+        private void openSZSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult result =SZS.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                if (SZS.FileName.EndsWith("szs"))
+                {
+                    Yaz0Compression.Decompress(SZS.FileName + "", "Files/Unpacked.sarc");
+                    if (File.Exists("Files/Unpacked.sarc"))
+                    {
+                        Bytes = File.ReadAllBytes("Files/Unpacked.sarc");
+                        var newArray = Bytes.Skip(4096).ToArray();
+                        File.WriteAllBytes("Files/Unpacked.byml", newArray);
+                        if (!File.Exists("Files/UNP"))
+                        {
+                            File.Copy("Files/Unpacked.byml", "Files/UNP");
+                        }
+                        else
+                        {
+                            File.Delete("Files/UNP");
+                            File.Copy("Files/Unpacked.byml", "Files/UNP");
+                        }
+                        ofd.FileName = "Files/Unpacked.byml";
+                        FileOpened = true;
+                        MessageBox.Show("Successfully Unpacked the byml file from the szs to Files folder in the exe folder", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Please select a valid szs file", "Not a szs file", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please Select A File", "File is not selected", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void asSZSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            byte[] Dots = new byte[4096];
+            {
+                using (FileStream fs = new FileStream("Files/Unpacked.sarc", FileMode.Open, FileAccess.Read))
+                {
+                    fs.Read(Dots, 0, Dots.Length);
+                    fs.Close();
+                }
+            }
+            var s = new MemoryStream();
+            s.Write(Dots, 0, Dots.Length);
+            s.Write(File.ReadAllBytes("Files/Unpacked.byml"), 0, File.ReadAllBytes("Files/Unpacked.byml").Length);
+            var PS = s.ToArray();
+
+            File.WriteAllBytes("Files/UNP", PS);
+            myProcess.StartInfo.FileName = "YAZ0COMP.exe";
+            myProcess.StartInfo.WorkingDirectory = Path.GetDirectoryName("Files/");
+            Process proces = Process.Start(myProcess.StartInfo);
+            DialogResult result = SZSSave.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                if (!File.Exists(SZSSave.FileName))
+                {
+                    if (SZSSave.FileName.EndsWith("szs"))
+                    {
+                        File.Copy("Files/!out", SZSSave.FileName);
+                        MessageBox.Show("Successfully saved the szs file!", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        File.Copy("Files/!out", SZSSave.FileName + ".szs");
+                        MessageBox.Show("Successfully saved the szs file!", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                else
+                {
+                    DialogResult Res = MessageBox.Show("Are you sure you want to overwrite the file?", "The selected file exist!", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
+                    if (Res == DialogResult.OK)
+                    {
+                        File.Delete(SZSSave.FileName);
+                        File.Copy("Files/!out", SZSSave.FileName);
+                        MessageBox.Show("Successfully saved the szs file!", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    if (Res == DialogResult.Cancel)
+                    {
+                        MessageBox.Show("save canceled", "didn't save" , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("save canceled", "didn't save", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                File.Delete("Files/!out");
+            }
+       }
     }
 }
