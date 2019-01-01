@@ -1,8 +1,0 @@
-C:\Users\Isuru\Documents\Visual Studio 2015\Projects\GreenStarMaster\GreenStarMaster\obj\Debug\Green Star Master.exe
-C:\Users\Isuru\Documents\Visual Studio 2015\Projects\GreenStarMaster\GreenStarMaster\obj\Debug\Green Star Master.pdb
-C:\Users\Isuru\Documents\Visual Studio 2015\Projects\GreenStarMaster\GreenStarMaster\bin\Debug\Green Star Master.exe
-C:\Users\Isuru\Documents\Visual Studio 2015\Projects\GreenStarMaster\GreenStarMaster\bin\Debug\Green Star Master.pdb
-C:\Users\Isuru\Documents\Visual Studio 2015\Projects\GreenStarMaster\GreenStarMaster\obj\Debug\WindowsFormsApplication3.Form1.resources
-C:\Users\Isuru\Documents\Visual Studio 2015\Projects\GreenStarMaster\GreenStarMaster\obj\Debug\GreenStarMaster.Properties.Resources.resources
-C:\Users\Isuru\Documents\Visual Studio 2015\Projects\GreenStarMaster\GreenStarMaster\obj\Debug\GreenStarMaster.csproj.GenerateResource.Cache
-C:\Users\Isuru\Documents\Visual Studio 2015\Projects\GreenStarMaster\GreenStarMaster\obj\Debug\GreenStarMaster.Form2.resources
